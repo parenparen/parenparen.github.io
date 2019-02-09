@@ -1,0 +1,17 @@
+/* line 2, ../../../compass/derekmueller/public/css/cocentricRingSort.scss */
+body {
+  text-align: center;
+}
+
+/* line 5, ../../../compass/derekmueller/public/css/cocentricRingSort.scss */
+svg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 100%; */
+  margin: auto;
+}

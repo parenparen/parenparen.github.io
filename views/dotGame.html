@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <script src="/js/math.js" type="text/javascript"></script>
+  <script src="/js/d3.js" type="text/javascript"></script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/NN.js" type="text/javascript"></script>
+  <style>
+    #game {
+      text-align: center;
+      padding: 5px;
+    }
+    #chart {
+      display: inline-block;
+    }
+    #cost-chart {
+      text-align: center;
+    }
+    #cost-chart svg {
+      padding: 20px;
+    }
+    #chart-container {
+      text-align: center;
+      position: relative;
+    }
+    #chart-label {
+      position: absolute;
+      top: 50px;          
+    }
+    #cost-chart-label, #hits-chart-label, #prediction-chart-label {
+      display: block;
+      width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div id='score-box'>
+    <div class='retrain-interval'>
+      <label>Model retrain interval:</label>
+      <span>32s</span>
+    </div>
+    <div class='hits'>
+      <label>Hits:</label>
+      <span>0</span>
+    </div>
+    <div class='elapsed-time'>
+      <label>Time Elapsed:</label>
+      <span>0:00</span>
+    </div>
+  </div>
+  <div id='legend'>
+    <div>
+      1. prediction confidences
+    </div>
+    <div>
+      2. cost v iterations of gradient descent
+    </div>
+    <div>
+      3. hits over time
+    </div>
+  </div>
+  <div id='game'></div>
+  <div id='chart-container'>
+    <label id='prediction-chart-label'>1.</label>
+    <div id='prediction-chart'></div>
+    <label id='cost-chart-label'>2.</label>
+    <div id='cost-chart'></div>
+    <label id='hits-chart-label'>3.</label>
+    <div id='hits-chart'></div>
+  </div>
+  <script src="/js/dotGame.js" type="text/javascript"></script>
+
+</body>
+</html>

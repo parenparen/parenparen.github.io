@@ -1,0 +1,18 @@
+/* line 3, ../../../compass/derekmueller/public/css/tentative.scss */
+.t-button {
+  width: 20px;
+  height: 20px;
+  background-color: #e7e7e7;
+  text-align: center;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+/* line 16, ../../../compass/derekmueller/public/css/tentative.scss */
+.t-button:hover {
+  background-color: gainsboro;
+}

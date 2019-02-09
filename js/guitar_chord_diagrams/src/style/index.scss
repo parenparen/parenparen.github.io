@@ -1,0 +1,238 @@
+
+@import 'reset';
+
+body * {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact; 
+}
+
+body {
+  min-width: 730px;
+}
+
+.diagram-config {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media print {
+    display: none;
+  }
+
+  textarea {
+    min-width: 500px;
+    min-height: 150px;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+
+  button {
+    margin-top: 15px;
+    width: 150px;
+  }
+}
+
+.config {
+  text-align: center;
+  padding: 10px 10px 30px;
+
+  @media print {
+    display: none;
+  }
+
+  .input-container {
+    margin-bottom: 5px;
+
+    label {
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
+
+  button {
+    margin-top: 15px;
+    width: 150px;
+  }
+
+  input {
+    width: 150px;
+  }
+}
+
+.chord-diagram {
+  page-break-inside: avoid;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 10px 10px 53px;
+  position: relative;
+
+  .string-labels {
+    position: absolute;
+    height: 100%;
+    left: -47px;
+    color: gray;
+    font-family: Arial;
+    font-size: 11px;
+
+    .string-label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
+    .string-label * {
+      display: inline-block;
+    }
+  }
+
+  sup {
+    font-size: 11px;
+    top: -2px;
+    position: relative;
+
+    &.sharp {
+      &::before {
+        content: '♯';
+      }
+    }
+
+    &.flat {
+      &::before {
+        content: '♭';
+      }
+    }
+  }
+
+  .delete {
+    @media print {
+      display: none;
+    }
+
+    &::after { 
+      content: 'x';
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-family: Arial;
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    text-align: center;
+    padding: 0 8px 21px;
+    min-height: 24px;
+  }
+
+  .fretboard {
+    height: 140px;
+    border: 1px solid black;
+    position: relative;
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      background: #c5c5c5;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-top: -5px;
+      margin-left: -5px;
+      z-index: -1000;
+    }
+
+    .double-dots {
+      .dot:first-child {
+        top: 1/6 * 100%
+      }
+
+      .dot:last-child {
+        top: 5/6 * 100%
+      }
+    }
+      
+    .frets {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      top: 0;
+
+      .fret {
+        height: 100%;
+        display: inline-block;
+        border-right: 1px solid black;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .fret-numbers {
+      position: absolute;
+      top: -21px;
+      width: 100%;
+
+      .fret-number {
+        font-family: Arial;
+        display: inline-block;
+        text-align: center;
+        font-size: 11px;
+        color: gray;
+      }
+    }
+  
+    .string-container {
+      width: 100%;
+      position: relative;
+
+      .string {
+        width: 100%;
+        border-bottom: 1px solid #c7c7c7;
+        height: 50%;
+        position: absolute;
+        z-index: -1000;
+      }
+
+      .note {
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        top: 50%;
+        margin-top: -10px;
+        margin-left: -23px;
+
+        @media(min-width: 576px) {
+          margin-left: -25px;
+        }
+
+        * {
+          display: inline-block;
+        } 
+
+        &.root::before {
+          content: ' ';
+          background: black;
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          display: block;
+          z-index: -100;
+          position: absolute;
+          left: -1px;
+          top: -1px;
+        }
+      }
+    }
+  }
+}
+

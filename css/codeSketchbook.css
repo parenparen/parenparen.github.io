@@ -1,0 +1,51 @@
+/* line 2, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook .sketchbook-row {
+  height: 46px;
+}
+/* line 6, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook .github {
+  margin-left: 10px;
+  font-size: 18px;
+}
+/* line 10, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook .github, #code-sketchbook .github:hover, #code-sketchbook .github:active {
+  text-decoration: none;
+}
+/* line 15, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook #text-container h2 {
+  margin-bottom: 30px;
+}
+/* line 19, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook #back-button {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* line 24, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook #npc-link-img:hover {
+  opacity: 0.8;
+}
+/* line 28, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook #npc-link-img-container {
+  margin-top: -8px !important;
+}
+/* line 32, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook #npc-link-img {
+  margin-bottom: -10px;
+}
+/* line 36, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook #text-container h2 {
+  font-size: 20px !important;
+}
+/* line 41, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook .code-sketchbook-pager a {
+  display: inline-block;
+  margin: 5px;
+}
+/* line 44, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook .code-sketchbook-pager a.current {
+  text-decoration: underline;
+}
+/* line 47, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
+#code-sketchbook .code-sketchbook-pager a:not(.home) {
+  font-weight: bold;
+}

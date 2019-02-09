@@ -1,0 +1,68 @@
+/* line 1, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+body {
+  text-align: center;
+  padding: 0 0 30px 0;
+  margin: 0;
+}
+
+/* line 6, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+svg {
+  margin: auto;
+  display: block;
+  margin-bottom: -76px;
+}
+
+/* line 11, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+svg g rect:first-child {
+  fill: #5292ca;
+}
+
+/* line 14, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+svg g rect:nth-child(2) {
+  fill: #ff6d6d;
+}
+
+/* line 17, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+.legend {
+  margin-top: 118px;
+  font-size: 10px;
+  color: #0f0f0f;
+}
+
+/* line 22, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+.placard {
+  margin-top: 20px;
+  font-size: 10px;
+  color: #0f0f0f;
+}
+
+/* line 27, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+.placard div {
+  margin-bottom: 3px;
+}
+
+/* line 30, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+body > svg:first-child {
+  margin-top: -39px;
+}
+
+/* line 34, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+.swatch-1, .swatch-2 {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  height: 2px;
+  width: 23px;
+  position: relative;
+  top: -2px;
+}
+
+/* line 43, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+.swatch-1 {
+  background: #ff6d6d;
+}
+
+/* line 46, ../../../compass/derekmueller/public/css/qsortVisualization.scss */
+.swatch-2 {
+  background: #5292ca;
+}

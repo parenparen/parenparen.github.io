@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<link type="text/css" rel="stylesheet" href="css/tentative.css" />
+
+<style>
+
+#text-container > h2 {
+  margin-bottom: 50px;
+}
+
+#back-button {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#npc-link-img:hover {
+  opacity: 0.8;
+}
+
+a {
+  margin-bottom: 25px;
+}
+
+#npc-link-img-container {
+  margin-top: -8px !important;
+}
+
+#npc-link-img {
+  margin-bottom: -10px;
+}
+
+#text-container h2 {
+  font-size: 20px !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id='code-sketchbook'>
+<div id='back-button' class='t-button'> &lt; </div>
+
+<div id='text-container' class='content'>
+  <h2>Code Sketchbook</h2>
+  <a href='/exquisiteCorpse'>
+    Automatic Exquisite Corpse
+  </a>
+  <a href='/kMeansVisualization'>
+    K-means 
+  </a>
+  <a href='/nnVisualization'>
+    Feedforward Neural Network
+  </a>
+  <a href='/logisticRegressionCharts'>
+    Logistic Regression
+  </a>
+  <a href='/grayCodeMusicalScales'>
+    Gray Code
+  </a>
+  <a href='/multivariateLR'>
+    Multivariate Linear Regression
+  </a>
+  <a href='/quicksortVisualization'>
+    Quicksort
+  </a>
+  <a href='/heapsortSVG'>
+    Heapsort
+  </a>
+  <a href='/hanoiSVG'>
+    Towers of Hanoi
+  </a>
+  <a href='/nPlayerChess'>
+    n-Player Chess
+  </a>
+</div>
+
+<script>
+
+(function () {
+  document.getElementById ('back-button').
+    addEventListener ('click', function () { 
+      window.history.go (-1);
+    });
+}) ();
+
+</script>
+
+</div>
+
+</body>
+
+</html>
+

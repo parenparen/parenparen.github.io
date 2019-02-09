@@ -1,0 +1,42 @@
+/* line 1, ../../../compass/derekmueller/public/css/hanoi.scss */
+body {
+  text-align: center;
+  padding-bottom: 85px;
+}
+
+/* line 6, ../../../compass/derekmueller/public/css/hanoi.scss */
+svg {
+  width: 100%;
+  max-width: 815px;
+  height: 100%;
+}
+
+/* line 12, ../../../compass/derekmueller/public/css/hanoi.scss */
+#instructions {
+  width: 100%;
+  height: 48px;
+}
+
+/* line 17, ../../../compass/derekmueller/public/css/hanoi.scss */
+#instructions-container {
+  width: 100%;
+  max-width: 815px;
+  margin: auto;
+}
+
+/* line 23, ../../../compass/derekmueller/public/css/hanoi.scss */
+#error-message {
+  color: red;
+}
+
+/* line 27, ../../../compass/derekmueller/public/css/hanoi.scss */
+.error {
+  background-color: #ffe4e4;
+}
+
+/* line 31, ../../../compass/derekmueller/public/css/hanoi.scss */
+#git-hub {
+  margin-top: 12px;
+  display: block;
+  text-decoration: none;
+}

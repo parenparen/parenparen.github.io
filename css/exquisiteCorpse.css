@@ -1,0 +1,87 @@
+/* line 2, ../sass/exquisiteCorpse.scss */
+/* line 2, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+body {
+  text-align: center;
+}
+
+/* line 6, ../sass/exquisiteCorpse.scss */
+/* line 7, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+canvas, div, body {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/exquisiteCorpse.scss */
+/* line 12, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#canvas-container,
+#canvas-compressed-container,
+#ai-canvas-container, .jd-controls {
+  margin: auto;
+}
+
+/* line 16, ../sass/exquisiteCorpse.scss */
+/* line 19, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#canvas-container {
+  cursor: pointer;
+}
+
+/* line 18, ../sass/exquisiteCorpse.scss */
+/* line 23, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#canvas-container canvas {
+  visibility: hidden !important;
+}
+
+/* line 23, ../sass/exquisiteCorpse.scss */
+/* line 28, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#canvas-compressed {
+  cursor: pointer;
+}
+
+/* line 27, ../sass/exquisiteCorpse.scss */
+/* line 33, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#ai-paper, #canvas-container canvas:last-child, #canvas-compressed {
+  border: 1px solid black;
+}
+
+/* line 31, ../sass/exquisiteCorpse.scss */
+/* line 38, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#ai-paper, #canvas-compressed {
+  position: relative;
+  top: -300px;
+}
+
+/* line 36, ../sass/exquisiteCorpse.scss */
+/* line 44, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#ai-paper {
+  top: -304px;
+}
+
+/* line 40, ../sass/exquisiteCorpse.scss */
+/* line 49, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#ai-paper {
+  border-top: none;
+}
+
+/* line 44, ../sass/exquisiteCorpse.scss */
+/* line 54, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+.jd-clear-button, .jd-clear-button:active, .jd-clear-button:focus {
+  outline: 0;
+  margin: 0;
+  background: none;
+  border: 1px solid black;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+
+/* line 55, ../sass/exquisiteCorpse.scss */
+/* line 64, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+.jd-clear-button:hover {
+  cursor: pointer;
+  background: #f3f3f3;
+}
+
+/* line 61, ../sass/exquisiteCorpse.scss */
+/* line 70, ../../../compass/derekmueller/public/css/exquisiteCorpse.scss */
+#canvas-container,
+#canvas-compressed-container {
+  padding: 0;
+}

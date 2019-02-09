@@ -1,0 +1,18 @@
+/* line 2, ../../../compass/derekmueller/public/css/prototypes.scss */
+.main_content {
+  z-index: 0;
+  text-align: center;
+  /*border: 3px solid black;*/
+  overflow: hidden;
+}
+
+/* line 10, ../../../compass/derekmueller/public/css/prototypes.scss */
+.canvas_container {
+  z-index: 0;
+  margin: 0px auto;
+  width: 831px;
+  height: 907px;
+  text-align: center;
+  /*border: 3px solid black;*/
+  overflow: hidden;
+}

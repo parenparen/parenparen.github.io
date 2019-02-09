@@ -1,0 +1,35 @@
+/* line 4, ../../../compass/derekmueller/public/css/2p1kInfo.scss */
+body {
+  background-color: orange;
+}
+
+/* line 9, ../../../compass/derekmueller/public/css/2p1kInfo.scss */
+div.main {
+  background-color: yellow;
+  height: 50em;
+}
+
+/* line 16, ../../../compass/derekmueller/public/css/2p1kInfo.scss */
+h1.title {
+  font-size: 4em;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+/* line 23, ../../../compass/derekmueller/public/css/2p1kInfo.scss */
+p.description {
+  text-align: center;
+}
+
+/* line 28, ../../../compass/derekmueller/public/css/2p1kInfo.scss */
+p.download_links {
+  margin-top: 3.0em;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 35, ../../../compass/derekmueller/public/css/2p1kInfo.scss */
+p.more_info {
+  bottom: 4em;
+  text-align: center;
+}
