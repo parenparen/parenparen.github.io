@@ -9,14 +9,13 @@ class CodeSketchbook extends Component {
   }
 
   getPageNumber() {
-    return this.props.location.hash ? 
-      parseInt(this.props.location.hash.replace(/^#/, ''), 10) : 1;
+    return parseInt(this.props.location.pathname.split('/').pop(), 10);
   }
 
   getPages() {
     return [
       {
-        href: '/fretBoardDiagrams',
+        href: '/views/fretBoardDiagrams.html',
         title: 'Fret Board Diagrams',
         github: 'https://github.com/parenparen/guitar_chord_diagrams'
       },
@@ -25,52 +24,52 @@ class CodeSketchbook extends Component {
         title: 'Geometric Book Cover Design'
       },
       {
-        href: '/exquisiteCorpse',
+        href: '/views/exquisiteCorpse.html',
         title: 'Automatic Exquisite Corpse',
         github: 'https://github.com/parenparen/exquisiteCorpse'
       },
       {
-        href: '/kMeansVisualization',
+        href: '/views/kMeans.html',
         title: 'K-means',
         github: 'https://github.com/parenparen/k-means-Visualization'
       },
       {
-        href: '/nnVisualization',
+        href: '/views/dotGame.html',
         title: 'Feedforward Neural Network',
         github: 'https://github.com/parenparen/neuralNetworkVisualization'
       },
       {
-        href: '/logisticRegressionCharts',
+        href: '/views/logisticRegression.html',
         title: 'Logistic Regression',
         github: 'https://github.com/parenparen/logisticRegressionCharts'
       },
       {
-        href: '/grayCodeMusicalScales',
+        href: '/views/grayCodeScales.html',
         title: 'Gray Code',
         github: 'https://github.com/parenparen/grayCodeMusicalScales'
       },
       {
-        href: '/multivariateLR',
+        href: '/views/multivariateLR.html',
         title: 'Multivariate Linear Regression',
         github: 'https://github.com/parenparen/multivariateLRVisualization'
       },
       {
-        href: '/quicksortVisualization',
+        href: '/views/quicksortVisualization.html',
         title: 'Quicksort',
         github: 'https://github.com/parenparen/quicksortVisualization'
       },
       {
-        href: '/heapsortSVG',
+        href: '/views/heapsortSVG.html',
         title: 'Heapsort',
         github: 'https://github.com/parenparen/heapsortSVG'
       },
       {
-        href: '/hanoiSVG',
+        href: '/views/hanoiSVG.html',
         title: 'Towers of Hanoi',
         github: 'https://github.com/parenparen/hanoiSVG'
       },
       {
-        href: '/nPlayerChess',
+        href: '/views/npc.html',
         title: 'n-Player Chess',
         github: 'https://github.com/parenparen/nplayerchess'
       }

@@ -12,10 +12,10 @@ class Home extends Component {
                   <div><a href='/media/resume.pdf'>Résumé</a></div>
                   <div><a href='https://www.github.com/parenparen?tab=repositories'>
                     www.github.com/parenparen</a></div>
-                  <div><Link to='/codeSketchbook'>
+                  <div><Link to='/codeSketchbook/1'>
                       Code Sketchbook
                   </Link></div>
-                  <div><a href='/2p1kInfo'>Two Players, One Keyboard</a></div>
+                  <div><a href='/views/2p1kInfo.html'>Two Players, One Keyboard</a></div>
                   <img id='logo' src='/images/boardshot.png' />
               </div></div>
           </div>);
