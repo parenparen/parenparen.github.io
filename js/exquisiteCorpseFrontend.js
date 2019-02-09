@@ -32,7 +32,7 @@ ExquisiteCorpseFrontend.prototype.getTheta = function () {
     var that = this;
     return new Promise (function (resolve) {
         $.ajax ({
-            url: 'data/exquisiteCorpse.json',
+            url: '../data/exquisiteCorpse.json',
             //url: 'params/16_images_27_by_36_300_iterations.json',
             dataType: 'json',
             success: function (data) {

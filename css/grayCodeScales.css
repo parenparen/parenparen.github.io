@@ -154,7 +154,7 @@ body {
 #play-button > span,
 #pause-button > span {
   position: relative;
-  top: 3px;
+  top: 5px;
   left: 3px;
   color: #5d5d5d;
 }
