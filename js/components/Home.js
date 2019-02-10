@@ -7,15 +7,26 @@ class Home extends Component {
           <div id='home-page'>
               <div id='text-container' className='content'><div>
                   <h2>Derek T. Mueller</h2>
-                  <p>- Software Developer -</p>
-                  <p>dtmuelle[at]gmail[dot]com</p>
-                  <div><a href='/media/resume.pdf'>Résumé</a></div>
-                  <div><a href='https://www.github.com/parenparen?tab=repositories'>
-                    www.github.com/parenparen</a></div>
-                  <div><Link to='/codeSketchbook/1'>
-                     Experiments 
-                  </Link></div>
-                  <div><a href='/views/2p1kInfo.html'>Two Players, One Keyboard</a></div>
+                  <ul>
+                    <li>
+                      - Software Developer -
+                    </li>
+                    <li>
+                      dtmuelle[at]gmail[dot]com
+                    </li>
+                    <li>
+                      <a href='/media/resume.pdf'>Résumé</a>
+                    </li>
+                    <li>
+                      <a href='https://www.github.com/parenparen?tab=repositories'>github</a>
+                    </li>
+                    <li>
+                      <Link to='/codeSketchbook/1'>Experiments</Link>
+                    </li>
+                    <li>
+                      <a href='/views/2p1kInfo.html'>Two Players, One Keyboard</a>
+                    </li>
+                  </ul>
                   <img id='logo' src='/images/boardshot.png' />
               </div></div>
           </div>);

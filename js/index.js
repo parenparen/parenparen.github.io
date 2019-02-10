@@ -7,6 +7,7 @@ import CodeSketchbook from './components/CodeSketchbook';
 import Perception from './components/Perception';
 import { createHashHistory } from 'history'
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
+import styles from '../css/index.scss';
 
 ReactDOM.render((
    <Router history={appHistory}>
