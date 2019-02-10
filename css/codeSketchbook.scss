@@ -1,7 +1,13 @@
-/* line 2, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
-#code-sketchbook .sketchbook-row {
-  height: 46px;
+#code-sketchbook {
+  .sketchbook-row {
+    height: 42px;
+
+    a {
+      vertical-align: top;
+    }
+  }
 }
+
 /* line 6, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
 #code-sketchbook .github {
   margin-left: 10px;
@@ -13,7 +19,7 @@
 }
 /* line 15, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
 #code-sketchbook #text-container h2 {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 /* line 19, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
 #code-sketchbook #back-button {

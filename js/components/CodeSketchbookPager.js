@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 class CodeSketchbookPager extends Component {
     getPaginationButton() {
@@ -8,7 +8,7 @@ class CodeSketchbookPager extends Component {
             buttons.push(
                 <Link 
                  className={this.props.currentPage === i + 1 ? 'current' : ''} 
-                 key={i + 1} to={this.props.basePath.replace(/:page/, '') + (i + 1)}>{i + 1}</Link>);
+                 key={i + 1} to={this.props.basePath.replace(/\d+$/, '') + (i + 1)}>{i + 1}</Link>);
         }
         return buttons;
     }
