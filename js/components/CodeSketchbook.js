@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import CodeSketchbookPager from './CodeSketchbookPager';
 
 class CodeSketchbook extends Component {
@@ -9,11 +10,16 @@ class CodeSketchbook extends Component {
   }
 
   getPageNumber() {
+    console.log(this.props);
     return parseInt(this.props.location.pathname.split('/').pop(), 10);
   }
 
   getPages() {
     return [
+//      {
+//        to: '/generative',
+//        title: 'Generative Art',
+//      },
       {
         href: '/views/fretBoardDiagrams.html',
         title: 'Fret Board Diagrams',
@@ -84,7 +90,7 @@ class CodeSketchbook extends Component {
         (new Array(this.pageSize)).fill(null), 
         this.getPages().slice(start, end)
       ).map((page, i) => {
-        return (<div key={i} 
+        return (<li key={i} 
           className='sketchbook-row'>{
           page ? 
             [
@@ -97,7 +103,7 @@ class CodeSketchbook extends Component {
                 null
             ] :
             <a style={{visibility: 'hidden'}}>placeholder</a>
-        }</div>);
+        }</li>);
     });
   }
 
@@ -105,11 +111,13 @@ class CodeSketchbook extends Component {
     return (<div>
       <div id='code-sketchbook'>
 
-      <div id='text-container'><div>
-        <h2>Experiments</h2>
-        {this.getCurrentPages()}
+      <div id='text-container'><div className='text-container-inner'>
+        <h2>Code Sketchbook</h2>
+        <ul>
+          {this.getCurrentPages()}
+        </ul>
         <CodeSketchbookPager 
-         basePath={this.props.route.path}
+         basePath={this.props.location.pathname}
          currentPage={this.getPageNumber()}
          pageCount={this.getPages().length / this.pageSize} />
       </div></div>
@@ -118,4 +126,4 @@ class CodeSketchbook extends Component {
   }
 };
 
-export default CodeSketchbook;
+export default withRouter(CodeSketchbook);
