@@ -27811,7 +27811,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            '- Web Programmer -'
+	                            '- Software Developer -'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
@@ -27842,7 +27842,7 @@
 	                            _react2.default.createElement(
 	                                _reactRouter.Link,
 	                                { to: '/codeSketchbook/1' },
-	                                'Code Sketchbook'
+	                                'Experiments'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -28013,7 +28013,7 @@
 	              _react2.default.createElement(
 	                'h2',
 	                null,
-	                'Code Sketchbook'
+	                'Experiments'
 	              ),
 	              this.getCurrentPages(),
 	              _react2.default.createElement(_CodeSketchbookPager2.default, {

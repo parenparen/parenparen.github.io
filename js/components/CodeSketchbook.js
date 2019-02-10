@@ -106,7 +106,7 @@ class CodeSketchbook extends Component {
       <div id='code-sketchbook'>
 
       <div id='text-container'><div>
-        <h2>Code Sketchbook</h2>
+        <h2>Experiments</h2>
         {this.getCurrentPages()}
         <CodeSketchbookPager 
          basePath={this.props.route.path}
