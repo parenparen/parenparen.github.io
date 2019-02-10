@@ -29286,7 +29286,7 @@
 	                _react2.default.createElement(
 	                  _reactRouterDom.Link,
 	                  { to: '/codeSketchbook/1' },
-	                  'Experiments'
+	                  'Code Sketchbook'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -29466,7 +29466,7 @@
 	              _react2.default.createElement(
 	                'h2',
 	                null,
-	                'Experiments'
+	                'Code Sketchbook'
 	              ),
 	              _react2.default.createElement(
 	                'ul',

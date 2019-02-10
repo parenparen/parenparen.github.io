@@ -112,7 +112,7 @@ class CodeSketchbook extends Component {
       <div id='code-sketchbook'>
 
       <div id='text-container'><div className='text-container-inner'>
-        <h2>Experiments</h2>
+        <h2>Code Sketchbook</h2>
         <ul>
           {this.getCurrentPages()}
         </ul>

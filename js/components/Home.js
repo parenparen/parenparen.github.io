@@ -22,7 +22,7 @@ class Home extends Component {
                 <a href='https://www.github.com/parenparen?tab=repositories'>github</a>
               </li>
               <li>
-                <Link to='/codeSketchbook/1'>Experiments</Link>
+                <Link to='/codeSketchbook/1'>Code Sketchbook</Link>
               </li>
               <li>
                 <a href='/views/2p1kInfo.html'>Two Players, One Keyboard</a>
