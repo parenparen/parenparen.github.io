@@ -7,13 +7,13 @@ class Home extends Component {
           <div id='home-page'>
               <div id='text-container' className='content'><div>
                   <h2>Derek T. Mueller</h2>
-                  <p>- Web Programmer -</p>
+                  <p>- Software Developer -</p>
                   <p>dtmuelle[at]gmail[dot]com</p>
                   <div><a href='/media/resume.pdf'>Résumé</a></div>
                   <div><a href='https://www.github.com/parenparen?tab=repositories'>
                     www.github.com/parenparen</a></div>
                   <div><Link to='/codeSketchbook/1'>
-                      Code Sketchbook
+                     Experiments 
                   </Link></div>
                   <div><a href='/views/2p1kInfo.html'>Two Players, One Keyboard</a></div>
                   <img id='logo' src='/images/boardshot.png' />

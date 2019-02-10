@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./scripts/setup_server"
+    "start": "./scripts/setup_server",
+    "watch": "webpack -w"
   },
   "dependencies": {
     "babel-core": "^6.9.1",
