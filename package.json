@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./scripts/setup_server",
-    "watch": "webpack -w",
+    "watch": "webpack -w --progress --mode development",
     "deploy": "git checkout master && git merge build"
   },
   "dependencies": {
