@@ -29250,13 +29250,13 @@
 	              'Derek T. Mueller'
 	            ),
 	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              '- Software Developer -'
+	            ),
+	            _react2.default.createElement(
 	              'ul',
 	              null,
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                '- Software Developer -'
-	              ),
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -29360,7 +29360,6 @@
 	  _createClass(CodeSketchbook, [{
 	    key: 'getPageNumber',
 	    value: function getPageNumber() {
-	      console.log(this.props);
 	      return parseInt(this.props.location.pathname.split('/').pop(), 10);
 	    }
 	  }, {
@@ -60335,7 +60334,7 @@
 
 
 	// module
-	exports.push([module.id, "#code-sketchbook .sketchbook-row {\n  height: 42px; }\n  #code-sketchbook .sketchbook-row a {\n    vertical-align: top; }\n\n/* line 6, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .github {\n  margin-left: 10px;\n  font-size: 18px; }\n\n/* line 10, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .github, #code-sketchbook .github:hover, #code-sketchbook .github:active {\n  text-decoration: none; }\n\n/* line 15, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #text-container h2 {\n  margin-bottom: 32px; }\n\n/* line 19, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #back-button {\n  margin-top: 20px;\n  margin-left: 20px; }\n\n/* line 24, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #npc-link-img:hover {\n  opacity: 0.8; }\n\n/* line 28, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #npc-link-img-container {\n  margin-top: -8px !important; }\n\n/* line 32, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #npc-link-img {\n  margin-bottom: -10px; }\n\n/* line 36, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #text-container h2 {\n  font-size: 20px !important; }\n\n/* line 41, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .code-sketchbook-pager a {\n  display: inline-block;\n  margin: 5px; }\n\n/* line 44, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .code-sketchbook-pager a.current {\n  text-decoration: underline; }\n\n/* line 47, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .code-sketchbook-pager a:not(.home) {\n  font-weight: bold; }\n\n#logo {\n  margin-top: 24px;\n  width: 179px; }\n\n#text-container {\n  display: table;\n  height: 100%;\n  width: 100%;\n  text-align: center;\n  position: absolute; }\n  #text-container .text-container-inner {\n    padding: 16px 8px; }\n  #text-container > div {\n    display: table-cell;\n    vertical-align: middle; }\n  #text-container h2 {\n    font-size: 18px;\n    margin-bottom: 16px; }\n  #text-container li {\n    font-size: 16px;\n    margin-top: 8px;\n    color: #535353; }\n  #text-container a {\n    text-decoration: none;\n    color: #535353; }\n    #text-container a:hover {\n      text-decoration: underline;\n      color: blue; }\n    #text-container a:hover:visited {\n      text-decoration: underline;\n      color: purple; }\n", ""]);
+	exports.push([module.id, "#code-sketchbook .sketchbook-row {\n  height: 42px; }\n  #code-sketchbook .sketchbook-row a {\n    vertical-align: top; }\n\n/* line 6, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .github {\n  margin-left: 10px;\n  font-size: 18px; }\n\n/* line 10, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .github, #code-sketchbook .github:hover, #code-sketchbook .github:active {\n  text-decoration: none; }\n\n/* line 15, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #text-container h2 {\n  margin-bottom: 32px; }\n\n/* line 19, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #back-button {\n  margin-top: 20px;\n  margin-left: 20px; }\n\n/* line 24, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #npc-link-img:hover {\n  opacity: 0.8; }\n\n/* line 28, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #npc-link-img-container {\n  margin-top: -8px !important; }\n\n/* line 32, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #npc-link-img {\n  margin-bottom: -10px; }\n\n/* line 36, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook #text-container h2 {\n  font-size: 20px !important; }\n\n/* line 41, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .code-sketchbook-pager a {\n  display: inline-block;\n  margin: 5px; }\n\n/* line 44, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .code-sketchbook-pager a.current {\n  text-decoration: underline; }\n\n/* line 47, ../../../compass/derekmueller/public/css/codeSketchbook.scss */\n#code-sketchbook .code-sketchbook-pager a:not(.home) {\n  font-weight: bold; }\n\n#logo {\n  margin-top: 24px;\n  width: 179px; }\n\n#home-page #text-container h2 {\n  margin-bottom: 8px; }\n\n#home-page #text-container h3 {\n  font-size: 16px;\n  color: #535353;\n  margin-bottom: 16px; }\n\n#text-container {\n  display: table;\n  height: 100%;\n  width: 100%;\n  text-align: center;\n  position: absolute; }\n  #text-container .text-container-inner {\n    padding: 16px 8px; }\n  #text-container > div {\n    display: table-cell;\n    vertical-align: middle; }\n  #text-container h2 {\n    font-size: 18px;\n    margin-bottom: 16px; }\n  #text-container li {\n    font-size: 16px;\n    margin-top: 8px;\n    color: #535353; }\n  #text-container a {\n    text-decoration: none;\n    color: #535353; }\n    #text-container a:hover {\n      text-decoration: underline;\n      color: blue; }\n    #text-container a:hover:visited {\n      text-decoration: underline;\n      color: purple; }\n", ""]);
 
 	// exports
 

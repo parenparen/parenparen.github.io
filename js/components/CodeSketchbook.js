@@ -10,7 +10,6 @@ class CodeSketchbook extends Component {
   }
 
   getPageNumber() {
-    console.log(this.props);
     return parseInt(this.props.location.pathname.split('/').pop(), 10);
   }
 

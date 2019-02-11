@@ -8,10 +8,10 @@ class Home extends Component {
         <div id='text-container' className='content'>
           <div className='text-container-inner'>
             <h2>Derek T. Mueller</h2>
+            <h3>
+              - Software Developer -
+            </h3>
             <ul>
-              <li>
-                - Software Developer -
-              </li>
               <li>
                 dtmuelle[at]gmail[dot]com
               </li>
