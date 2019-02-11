@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+//import twodperlinaccident from '../../images/generative_art/2dperlinaccident0.png';
 
 const Container = styled.div`
 `;

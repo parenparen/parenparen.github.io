@@ -3,8 +3,11 @@ import _ from 'lodash';
 import $ from 'jquery';
 
 class Perception extends Component {
-    d3: null
-    Rune: null
+    constructor(props) {
+      super(props);
+      this.d3 = null;
+      this.Rune = null;
+    }
 
     ease(i) {
         var val = (1 + Math.sin(i * Math.PI * 2 - Math.PI / 2)) / 2;
@@ -73,7 +76,7 @@ class Perception extends Component {
     bookcover(params={}) {
         var r = this.r;
         var bgPadding = 40 + Math.ceil(Math.random() * 40);
-        var params = _.merge({
+        params = _.merge({
             bgPadding: bgPadding,
             bgPadding2: bgPadding + 5 + Math.ceil(Math.random() * 20),
             stripes: {
