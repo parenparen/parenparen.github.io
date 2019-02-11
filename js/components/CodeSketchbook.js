@@ -15,10 +15,10 @@ class CodeSketchbook extends Component {
 
   getPages() {
     return [
-//      {
-//        to: '/generative',
-//        title: 'Generative Art',
-//      },
+      {
+        to: '/generative',
+        title: 'Generative Art',
+      },
       {
         href: '/views/fretBoardDiagrams.html',
         title: 'Fret Board Diagrams',
