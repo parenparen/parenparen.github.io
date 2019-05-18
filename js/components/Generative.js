@@ -6,16 +6,30 @@ import twodperlinaccident2 from '../../images/generative_art/2dperlinaccident2.p
 import twodperlinaccident3 from '../../images/generative_art/2dperlinaccident3.png';
 import twodperlinaccident4 from '../../images/generative_art/2dperlinaccident4.png';
 import twodperlinaccident5 from '../../images/generative_art/2dperlinaccident5.png';
+import elsinore from '../../images/generative_art/elsinore.png';
+
+const thumnailWidth = 230;
 
 const ThumbnailImg = styled.div`
-  flex-grow: 1;
-  flex-basis: 124px;
-  flex-shrink: 0;
+  width: 33.3%;
+  height: 33vw;
+  max-width: ${thumnailWidth}px;
+  max-height: ${thumnailWidth}px;
+  box-sizing: border-box;
+
+  @media(max-width: ${thumnailWidth * 3}px) {
+    max-width: none;
+    max-height: none;
+    width: 50%;
+    height: 50vw;
+  }
+
+  display: inline-block;
   cursor: pointer;
   background-origin: content-box;
   background-repeat: no-repeat;
   background-image: url("${(props) => props.image}");
-  background-size: center;
+  background-position: center;
 
   box-shadow: none;
   transition: box-shadow 0.5s;
@@ -24,22 +38,19 @@ const ThumbnailImg = styled.div`
     box-shadow: inset 0 0 8em rgba(0,0,0,0.5);
   }
 
-  &::before {
-    content:'';
-    float:left;
-    padding-top:100%;
-  }
+  font-size: initial;
 `;
 
 const Container = styled.div`
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
-  max-width: 1100px;
+  font-size: 0;
+  max-width: ${thumnailWidth * 3}px;
   margin: auto;
+  text-align: left;
+  padding-bottom: 32px;
+
+  @media(max-width: ${thumnailWidth * 3}px) {
+    padding-bottom: 0;
+  }
 `
 
 const Page = styled.div`
@@ -52,10 +63,10 @@ const Page = styled.div`
   }
 `;
 
-function Thumbnail(props) {
+function Thumbnail({image, ...props}) {
   return (
-    <ThumbnailImg image={props.image} onClick={() => {
-      window.location = props.image;
+    <ThumbnailImg image={image} {...props} onClick={() => {
+      window.location = image;
     }} />
   );
 }
@@ -65,6 +76,7 @@ export default function Generative(props) {
     <Page>
       <h2>Generative Art</h2>
       <Container>
+        <Thumbnail title='superbloom' image={elsinore} />
         <Thumbnail image={twodperlinaccident0} />
         <Thumbnail image={twodperlinaccident1} />
         <Thumbnail image={twodperlinaccident2} />
