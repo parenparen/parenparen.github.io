@@ -7,6 +7,7 @@ import twodperlinaccident3 from '../../images/generative_art/2dperlinaccident3.p
 import twodperlinaccident4 from '../../images/generative_art/2dperlinaccident4.png';
 import twodperlinaccident5 from '../../images/generative_art/2dperlinaccident5.png';
 import elsinore from '../../images/generative_art/elsinore.png';
+import seigaha from '../../images/generative_art/seigaha.png';
 
 const thumnailWidth = 230;
 
@@ -76,6 +77,7 @@ export default function Generative(props) {
     <Page>
       <h2>Generative Art</h2>
       <Container>
+        <Thumbnail title='3d-seigaiha' image={seigaiha} />
         <Thumbnail title='superbloom' image={elsinore} />
         <Thumbnail image={twodperlinaccident0} />
         <Thumbnail image={twodperlinaccident1} />
