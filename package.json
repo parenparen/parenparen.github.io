@@ -8,7 +8,7 @@
     "start": "./scripts/setup_server",
     "build": "webpack --progress --mode production",
     "watch": "webpack -w --progress --mode development",
-    "deploy": "git checkout master && git merge build && git push origin master",
+    "deploy": "npm run build && git checkout master && git merge build && git push origin master",
     "start:dev": "./node_modules/.bin/webpack-dev-server"
   },
   "dependencies": {
