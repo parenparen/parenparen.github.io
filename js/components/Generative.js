@@ -8,20 +8,21 @@ import twodperlinaccident4 from '../../images/generative_art/2dperlinaccident4.p
 import twodperlinaccident5 from '../../images/generative_art/2dperlinaccident5.png';
 import elsinore from '../../images/generative_art/elsinore.png';
 import seigaiha from '../../images/generative_art/seigaiha.png';
+import perlinSpheres from '../../images/generative_art/perlin-spheres.png';
 
-const thumnailWidth = 230;
+const thumnailWidth = 230,
+  descriptionHeight = 32;
 
 const ThumbnailImg = styled.div`
-  width: 33.3%;
+  font-size: 0;
   height: 33vw;
-  max-width: ${thumnailWidth}px;
+  width: 100%;
   max-height: ${thumnailWidth}px;
   box-sizing: border-box;
 
   @media(max-width: ${thumnailWidth * 3}px) {
-    max-width: none;
     max-height: none;
-    width: 50%;
+    width: 100%;
     height: 50vw;
   }
 
@@ -40,14 +41,46 @@ const ThumbnailImg = styled.div`
   }
 
   font-size: initial;
+  padding-bottom: ${descriptionHeight}px;
 `;
 
-const Container = styled.div`
+const ThumbnailContainer = styled.div`
   font-size: 0;
+  width: 33.3%;
+  box-sizing: border-box;
+
+  @media(max-width: ${thumnailWidth * 3}px) {
+    max-width: none;
+    width: 50%;
+  }
+
+  display: inline-block;
+`;
+
+const ThumbnailDescription = styled.div`
+  box-sizing: border-box;
+  height: ${descriptionHeight}px;
+  position: absolute;
+  font-size: 14px;
+  width: ${thumnailWidth}px;
+  padding: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media(max-width: ${thumnailWidth * 3}px) {
+    width: 50%;
+  }
+`;
+
+
+const Container = styled.div`
   max-width: ${thumnailWidth * 3}px;
   margin: auto;
   text-align: left;
   padding-bottom: 32px;
+  font-size: 0;
 
   @media(max-width: ${thumnailWidth * 3}px) {
     padding-bottom: 0;
@@ -58,26 +91,56 @@ const Page = styled.div`
   width: 100%;
   text-align: center;
   
-  h2 {
+  h1 {
     font-size: 20px;
     padding: 24px;
   }
 `;
 
-function Thumbnail({image, ...props}) {
+function GithubLink({href}) {
   return (
-    <ThumbnailImg image={image} {...props} onClick={() => {
-      window.location = image;
-    }} />
+    <a href={href}>
+      GitHub
+    </a>
+  );
+}
+
+function Thumbnail({
+    image, description = null, githubLink = null, ...props
+  }) {
+  return (
+    <ThumbnailContainer>
+      <ThumbnailImg image={image} {...props} onClick={() => {
+        window.location = image;
+      }} />
+      <ThumbnailDescription>
+        {description ? <p>{description}</p> : null}
+        {githubLink ? githubLink : null}
+      </ThumbnailDescription>
+    </ThumbnailContainer>
   );
 }
 
 export default function Generative(props) {
   return (
     <Page>
-      <h2>Generative Art</h2>
+      <h1>Generative Art</h1>
       <Container>
-        <Thumbnail title='3d-seigaiha' image={seigaiha} />
+        <Thumbnail 
+          title='perlin-spheres' 
+          image={perlinSpheres} 
+          description='Perlin Spheres'
+          githubLink={
+            <GithubLink href='https://github.com/parenparen/typescript-p5-boilerplate/blob/deconstructed-spheres/src/app.ts' />}
+          />
+        />
+        <Thumbnail 
+          title='3d-seigaiha' 
+          image={seigaiha} 
+          description='3d Seigaiha'
+          githubLink={
+            <GithubLink href='https://github.com/parenparen/typescript-p5-boilerplate/blob/seigaiha/src/app.ts' />}
+          />
         <Thumbnail title='superbloom' image={elsinore} />
         <Thumbnail image={twodperlinaccident0} />
         <Thumbnail image={twodperlinaccident1} />

@@ -7,6 +7,12 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "/js/"
   },
+  devServer: {
+    contentBase: path.join(__dirname, './'),
+    compress: true,
+    port: 9000,
+    hot: true
+  },
   module: {
     rules: [
       { test: /\.css$/, use: [ {loader: "style!css" } ] },
