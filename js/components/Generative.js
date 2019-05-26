@@ -55,12 +55,15 @@ const ThumbnailContainer = styled.div`
   }
 
   display: inline-block;
+
+  .placeholder {
+    visibility: hidden;
+  }
 `;
 
 const ThumbnailDescription = styled.div`
   box-sizing: border-box;
   height: ${descriptionHeight}px;
-  position: absolute;
   font-size: 14px;
   width: ${thumnailWidth}px;
   padding: 8px;
@@ -70,7 +73,7 @@ const ThumbnailDescription = styled.div`
   justify-content: space-between;
 
   @media(max-width: ${thumnailWidth * 3}px) {
-    width: 50%;
+    width: 100%;
   }
 `;
 
@@ -116,6 +119,8 @@ function Thumbnail({
       <ThumbnailDescription>
         {description ? <p>{description}</p> : null}
         {githubLink ? githubLink : null}
+        {(!description && !githubLink) ? 
+          <div className='placeholder'>placeholder</div>: null}
       </ThumbnailDescription>
     </ThumbnailContainer>
   );
