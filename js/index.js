@@ -9,6 +9,10 @@ import Perception from './components/Perception';
 import Generative from './components/Generative';
 import styles from '../css/index.scss';
 
+if(module.hot) {
+  module.hot.accept();
+}
+
 ReactDOM.render((
  <Router>
    <App>

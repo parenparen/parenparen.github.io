@@ -8,7 +8,8 @@
     "start": "./scripts/setup_server",
     "build": "webpack --progress --mode production",
     "watch": "webpack -w --progress --mode development",
-    "deploy": "git checkout master && git merge build && git push origin master"
+    "deploy": "git checkout master && git merge build && git push origin master",
+    "start:dev": "./node_modules/.bin/webpack-dev-server"
   },
   "dependencies": {
     "ajv": "^6.8.1",
@@ -30,7 +31,8 @@
     "sass-loader": "^7.1.0",
     "socket.io": "~0.9.16",
     "style-loader": "^0.23.1",
-    "styled-components": "^4.1.3"
+    "styled-components": "^4.1.3",
+    "webpack-dev-server": "^3.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
