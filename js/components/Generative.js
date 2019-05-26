@@ -7,7 +7,7 @@ import twodperlinaccident3 from '../../images/generative_art/2dperlinaccident3.p
 import twodperlinaccident4 from '../../images/generative_art/2dperlinaccident4.png';
 import twodperlinaccident5 from '../../images/generative_art/2dperlinaccident5.png';
 import elsinore from '../../images/generative_art/elsinore.png';
-import seigaha from '../../images/generative_art/seigaha.png';
+import seigaiha from '../../images/generative_art/seigaiha.png';
 
 const thumnailWidth = 230;
 
