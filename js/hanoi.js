@@ -1,5 +1,5 @@
 /*
-github.com/parenparen/svgTowersOfHanoi
+github.com/derektmueller/svgTowersOfHanoi
 
 Animated SVG-based Towers of Hanoi
 Copyright (C) 2014  Derek T. Mueller

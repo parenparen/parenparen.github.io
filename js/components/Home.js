@@ -19,7 +19,7 @@ class Home extends Component {
                 <a href='/media/resume.pdf'>Résumé</a>
               </li>
               <li>
-                <a href='https://www.github.com/parenparen?tab=repositories'>GitHub</a>
+                <a href='https://www.github.com/derektmueller?tab=repositories'>GitHub</a>
               </li>
               <li>
                 <Link to='/codeSketchbook/1'>Code Sketchbook</Link>

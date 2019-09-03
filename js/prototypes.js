@@ -1,5 +1,5 @@
 /*
-https://github.com/parenparen/Prototypes.js
+https://github.com/derektmueller/Prototypes.js
 
 Copyright 2014 Derek Mueller
 Released under the MIT license

@@ -136,7 +136,7 @@ export default function Generative(props) {
           image={perlinSpheres} 
           description='Perlin Spheres'
           githubLink={
-            <GithubLink href='https://github.com/parenparen/typescript-p5-boilerplate/blob/deconstructed-spheres/src/app.ts' />}
+            <GithubLink href='https://github.com/derektmueller/typescript-p5-boilerplate/blob/deconstructed-spheres/src/app.ts' />}
           />
         />
         <Thumbnail 
@@ -144,7 +144,7 @@ export default function Generative(props) {
           image={seigaiha} 
           description='3d Seigaiha'
           githubLink={
-            <GithubLink href='https://github.com/parenparen/typescript-p5-boilerplate/blob/seigaiha/src/app.ts' />}
+            <GithubLink href='https://github.com/derektmueller/typescript-p5-boilerplate/blob/seigaiha/src/app.ts' />}
           />
         <Thumbnail title='superbloom' image={elsinore} />
         <Thumbnail image={twodperlinaccident0} />

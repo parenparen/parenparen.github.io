@@ -23,7 +23,7 @@ class CodeSketchbook extends Component {
       {
         href: '/views/fretBoardDiagrams.html',
         title: 'Fret Board Diagrams',
-        github: 'https://github.com/parenparen/guitar_chord_diagrams'
+        github: 'https://github.com/derektmueller/guitar_chord_diagrams'
       },
       {
         to: '/perception',
@@ -32,52 +32,52 @@ class CodeSketchbook extends Component {
       {
         href: '/views/exquisiteCorpse.html',
         title: 'Automatic Exquisite Corpse',
-        github: 'https://github.com/parenparen/exquisiteCorpse'
+        github: 'https://github.com/derektmueller/exquisiteCorpse'
       },
       {
         href: '/views/kMeans.html',
         title: 'K-means',
-        github: 'https://github.com/parenparen/k-means-Visualization'
+        github: 'https://github.com/derektmueller/k-means-Visualization'
       },
       {
         href: '/views/dotGame.html',
         title: 'Feedforward Neural Network',
-        github: 'https://github.com/parenparen/neuralNetworkVisualization'
+        github: 'https://github.com/derektmueller/neuralNetworkVisualization'
       },
       {
         href: '/views/logisticRegression.html',
         title: 'Logistic Regression',
-        github: 'https://github.com/parenparen/logisticRegressionCharts'
+        github: 'https://github.com/derektmueller/logisticRegressionCharts'
       },
       {
         href: '/views/grayCodeScales.html',
         title: 'Gray Code',
-        github: 'https://github.com/parenparen/grayCodeMusicalScales'
+        github: 'https://github.com/derektmueller/grayCodeMusicalScales'
       },
       {
         href: '/views/multivariateLR.html',
         title: 'Multivariate Linear Regression',
-        github: 'https://github.com/parenparen/multivariateLRVisualization'
+        github: 'https://github.com/derektmueller/multivariateLRVisualization'
       },
       {
         href: '/views/quicksortVisualization.html',
         title: 'Quicksort',
-        github: 'https://github.com/parenparen/quicksortVisualization'
+        github: 'https://github.com/derektmueller/quicksortVisualization'
       },
       {
         href: '/views/heapsortSVG.html',
         title: 'Heapsort',
-        github: 'https://github.com/parenparen/heapsortSVG'
+        github: 'https://github.com/derektmueller/heapsortSVG'
       },
       {
         href: '/views/hanoiSVG.html',
         title: 'Towers of Hanoi',
-        github: 'https://github.com/parenparen/hanoiSVG'
+        github: 'https://github.com/derektmueller/hanoiSVG'
       },
       {
         href: '/views/npc.html',
         title: 'n-Player Chess',
-        github: 'https://github.com/parenparen/nplayerchess'
+        github: 'https://github.com/derektmueller/nplayerchess'
       }
     ];
   }
