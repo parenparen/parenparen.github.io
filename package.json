@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./scripts/setup_server",
+    "clean": "rm -r ./dist",
     "build": "webpack --progress --mode production",
     "watch": "webpack -w --progress --mode development",
     "deploy": "git checkout master && git merge build && git push origin master",
@@ -39,6 +40,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
   },
