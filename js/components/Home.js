@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class Home extends Component {
   render() {
     return (
-      <div id='home-page'>
+      <main id='home-page'>
         <div id='text-container' className='content'>
           <div className='text-container-inner'>
             <h1>Derek T. Mueller</h1>
@@ -31,7 +31,7 @@ class Home extends Component {
             <img id='logo' src='/images/boardshot.png' alt='generative art' />
           </div>
         </div>
-      </div>);
+      </main>);
   }
 };
 

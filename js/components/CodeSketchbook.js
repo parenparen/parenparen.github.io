@@ -7,6 +7,7 @@ class CodeSketchbook extends Component {
   constructor(props) {
     super(props);
     this.pageSize = 8;
+    this.main = React.createRef();
   }
 
   getPageNumber() {
@@ -108,7 +109,7 @@ class CodeSketchbook extends Component {
   }
 
   render() {
-    return (<div>
+    return (<main tabIndex='-1' ref={this.main}>
       <div id='code-sketchbook'>
 
       <div id='text-container'><div className='text-container-inner'>
@@ -117,12 +118,13 @@ class CodeSketchbook extends Component {
           {this.getCurrentPages()}
         </ul>
         <CodeSketchbookPager 
+         main={this.main}
          basePath={this.props.location.pathname}
          currentPage={this.getPageNumber()}
          pageCount={this.getPages().length / this.pageSize} />
       </div></div>
       </div>
-    </div>);
+    </main>);
   }
 };
 
