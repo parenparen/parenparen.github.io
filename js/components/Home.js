@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import resume from '../../media/resume.pdf';
 
 class Home extends Component {
   render() {
@@ -16,7 +17,7 @@ class Home extends Component {
                 dtmuelle@gmail.com
               </li>
               <li>
-                <a href='/media/resume.pdf'>Résumé</a>
+                <a href={resume}>Résumé</a>
               </li>
               <li>
                 <a href='https://www.github.com/derektmueller?tab=repositories'>GitHub</a>
