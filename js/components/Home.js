@@ -7,19 +7,19 @@ class Home extends Component {
       <div id='home-page'>
         <div id='text-container' className='content'>
           <div className='text-container-inner'>
-            <h2>Derek T. Mueller</h2>
-            <h3>
+            <h1>Derek T. Mueller</h1>
+            <p className='job-title'>
               - Software Developer -
-            </h3>
+            </p>
             <ul>
               <li>
-                dtmuelle[at]gmail[dot]com
+                dtmuelle@gmail.com
               </li>
               <li>
                 <a href='/media/resume.pdf'>Résumé</a>
               </li>
               <li>
-                <a href='https://www.github.com/parenparen?tab=repositories'>github</a>
+                <a href='https://www.github.com/parenparen?tab=repositories'>GitHub</a>
               </li>
               <li>
                 <Link to='/codeSketchbook/1'>Code Sketchbook</Link>
@@ -28,7 +28,7 @@ class Home extends Component {
                 <a href='/views/2p1kInfo.html'>Two Players, One Keyboard</a>
               </li>
             </ul>
-            <img id='logo' src='/images/boardshot.png' />
+            <img id='logo' src='/images/boardshot.png' alt='generative art' />
           </div>
         </div>
       </div>);

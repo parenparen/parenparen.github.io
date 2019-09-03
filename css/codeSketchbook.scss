@@ -1,6 +1,6 @@
 #code-sketchbook {
   .sketchbook-row {
-    height: 42px;
+    height: 26px;
 
     a {
       vertical-align: top;
@@ -18,8 +18,8 @@
   text-decoration: none;
 }
 /* line 15, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
-#code-sketchbook #text-container h2 {
-  margin-bottom: 32px;
+#code-sketchbook #text-container h1 {
+  margin-bottom: 26px;
 }
 /* line 19, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
 #code-sketchbook #back-button {
@@ -39,11 +39,15 @@
   margin-bottom: -10px;
 }
 /* line 36, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
-#code-sketchbook #text-container h2 {
+#code-sketchbook #text-container h1 {
   font-size: 20px !important;
+}
+#code-sketchbook .code-sketchbook-pager {
+  padding: 8px 0;
 }
 /* line 41, ../../../compass/derekmueller/public/css/codeSketchbook.scss */
 #code-sketchbook .code-sketchbook-pager a {
+  padding: 0 11px;
   display: inline-block;
   margin: 5px;
 }

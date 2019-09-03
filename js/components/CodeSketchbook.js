@@ -98,6 +98,7 @@ class CodeSketchbook extends Component {
                 <Link key='internal' to={page.to}>{page.title}</Link>,
               page.github ?
                 <a key='github' className="github fa fa-github" 
+                 aria-label='GitHub repository'
                  href={page.github} /> :
                 null
             ] :
@@ -111,7 +112,7 @@ class CodeSketchbook extends Component {
       <div id='code-sketchbook'>
 
       <div id='text-container'><div className='text-container-inner'>
-        <h2>Code Sketchbook</h2>
+        <h1>Code Sketchbook</h1>
         <ul>
           {this.getCurrentPages()}
         </ul>
