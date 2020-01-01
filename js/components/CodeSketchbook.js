@@ -17,7 +17,7 @@ class CodeSketchbook extends Component {
   getPages() {
     return [
       {
-        href: 'https://pencilpuzzles.com',
+        href: 'https://pencilpuzzle.com',
         title: 'Logic Puzzles',
         github: 'https://github.com/derektmueller/japanese-logic-puzzle-site'
       },
